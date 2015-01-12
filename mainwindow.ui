@@ -40,7 +40,7 @@
           <item>
            <widget class="QLabel" name="label_output">
             <property name="text">
-             <string>Replace (RegEx)</string>
+             <string>Replace</string>
             </property>
            </widget>
           </item>
