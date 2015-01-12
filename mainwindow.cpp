@@ -31,3 +31,8 @@ void MainWindow::dropEvent(QDropEvent *event) {
         ui->listWidget->addItem(shownText);
     }
 }
+
+void MainWindow::on_pushButton_clear_clicked()
+{
+    ui->listWidget->clear();
+}
