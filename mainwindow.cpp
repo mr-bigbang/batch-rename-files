@@ -25,10 +25,9 @@ void MainWindow::dropEvent(QDropEvent *event) {
     // Source: https://stackoverflow.com/questions/14895302
     for (auto url: event->mimeData()->urls()) {
         QString filePath = url.toLocalFile();
-        QString shownText = QString("%1 -> (%2)")
-                .arg(filePath.split("/").last())
-                .arg(filePath);
-        ui->listWidget->addItem(shownText);
+        ui->listWidget->addItem(QString("%1 -> (%2)")
+                                .arg(filePath.split("/").last())
+                                .arg(filePath));
     }
 }
 
