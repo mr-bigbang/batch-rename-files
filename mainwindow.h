@@ -20,6 +20,8 @@ protected:
     void dropEvent(QDropEvent *event);
 
 private slots:
+    void on_pushButton_rename_clicked();
+
     void on_pushButton_clear_clicked();
 
 private:
