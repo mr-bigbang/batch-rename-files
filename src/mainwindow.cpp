@@ -39,6 +39,7 @@ void MainWindow::on_pushButton_rename_clicked()
      *
      * Add Checkbox "Include Extension"
      * Add Preview function on lineEdit_output_changed
+     * Check for illegal character (\, /, :, *, ?, ", <, >, |)
      * Testing
      */
     if(ui->lineEdit_input->text().isEmpty()) {
